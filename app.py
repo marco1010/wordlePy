@@ -1,15 +1,15 @@
 import functions
 
 retries = 5
-target = "torre"
+target = "ARBOL"
 
 print("WORDLE: ADIVINA LA PALABRA DE 5 LETRAS")
 print("Tenes 5 intentos.")
 
-while retries > 0: 
+while retries > 0:
     line = input("Ingresa una palabra: ")
-    print (functions.checkWord(line, target))
-    if line == target: 
+    print(functions.checkWord(line, target))
+    if line == target:
         print("FELICIDADES! Acertaste la palabra!")
         break
     retries = retries - 1
